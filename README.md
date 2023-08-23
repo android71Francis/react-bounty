@@ -1,46 +1,61 @@
-# Getting Started with Create React App
+# Bounty CSR Application 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project is a Simple ReactJS Project which demonstrates the following: 
+1. Create a component in React
+2. Using useful third party library
+3. Create will a good composition 
 
-## Available Scripts
+## Getting started
 
-In the project directory, you can run:
+Follow the instructions below to get the project up and running on your local machine.
 
-### `npm start`
+## Prerequisite
+### Install Node JS
+Refer to https://nodejs.org/en/ to install nodejs
+Nodejs (v18) is required. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setup 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+```bash
+npm install
+```
 
-### `npm test`
+In order to run the application Type the following command
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
+The Application Runs on **localhost:3000**
 
-### `npm run build`
+## Application design
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Pages 
+- Home - Landing page of the application consist the follow:
+    -- Hero image carousel display
+    -- And center content
+- About - About us information page.
+- NoMatch - Landing page for invalid routes/url.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### Routes 
+- Root - This component is where you configured you page route using react-router  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Layouts 
+- Layout - This component is where you layout the page which has the Header, Footer and Content.
+    Is was import in Root(Routes) component 
 
-### `npm run eject`
+#### Components 
+- Header - this component is part of the layout component that display the logo and navigation links 
+- Footer - this component is part of the layout component that contains copy right info
+- CenterContent - this component is display in home page and has the center content details 
+- HeroCarousel - this component is display in home page and content the hero images slider 
+- HeroImage - this component is used in HeroCarousel component and display dynamic image and text.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Technology Stack 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+**ReactJS** - (v18) framework to build the applications
+**TailwindCss** - for design library
+**ReactRouter** - For managing the routes of the pages 
+**Swiper** - for the carousel of the component/image 
+**Typescript** - to able to add static type
+**Eslint** & **prettier** - For code clean
