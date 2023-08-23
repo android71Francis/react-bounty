@@ -54,8 +54,13 @@ The Application Runs on **localhost:3000**
 ## Technology Stack 
 
 **ReactJS** - (v18) framework to build the applications
+
 **TailwindCss** - for design library
+
 **ReactRouter** - For managing the routes of the pages 
+
 **Swiper** - for the carousel of the component/image 
+
 **Typescript** - to able to add static type
+
 **Eslint** & **prettier** - For code clean
